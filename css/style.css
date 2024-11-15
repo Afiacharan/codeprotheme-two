@@ -1,0 +1,674 @@
+body {
+  background-color: #f2f6f7;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --orange-color : #ff5a3c;
+}
+
+.nav-icon {
+ 
+  color: #000000;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.nav-icon:hover {
+  background-color: var(--orange-color);
+  color: white;
+}
+
+
+/* section1.............................. */
+.real-state {
+  font-size: 1em;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
+.real-state i {
+  color: var();
+  font-size: 20px;
+}
+.main-heading {
+  font-size: 50px;
+  font-weight: bold;
+}
+.line-paragraph {
+  position: relative;
+  padding-left: 35px;
+  font-size: 0.9em;
+  color: gray;
+}
+
+.line-paragraph::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: grey;
+}
+
+/* butttonnn. */
+.main-btn {
+  padding: 15px 33px;
+  background-color: #ff5a3c;
+
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  border: 1px solid #ff5a3c;
+}
+
+.main-btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #ededed;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  transition: all 0.2s ease;
+  border: 2px solid black;
+}
+
+.main-btn:hover {
+  color: #000000;
+}
+
+.main-btn:hover::after {
+  left: 0;
+}
+
+.video-icon {
+  font-size: 19px;
+  color: #ff5a3c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ff5a3c !important;
+}
+
+.carousel-indicators .active {
+  background-color: #ff5a3c;
+}
+
+/* Position the carousel controls */
+.carousel-control-prev {
+  left: -100px; /* Align the previous button to the left */
+  z-index: 1; /* Make sure it appears above other content */
+}
+
+.carousel-control-next {
+  right: -70px;
+  z-index: 1;
+}
+/* section-two.................. */
+
+.section-two {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.parent {
+  position: relative;
+}
+.section-main-icon {
+  position: absolute;
+  top: 72%;
+  left: 20%;
+
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.section-main-icon i {
+  font-size: 20px;
+  color: #ff5a3c;
+}
+
+.absolute {
+  position: absolute;
+  width: 50%;
+  top: 60%;
+  left: 0;
+}
+
+.section-three-heading {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.line-left {
+  position: relative;
+  padding-left: 20px;
+  color: #333;
+}
+
+.line-left::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 15vh;
+  background-color: #ff5a3c;
+}
+.section-three-icon {
+  background-color: #f5dfdc;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fe6a73;
+}
+
+/* section-four................................. */
+.counter-background {
+  background-color: #f2f6f7;
+}
+.section-four-counter-icon {
+  color: #ff5a3c;
+}
+/* section-five................................ */
+.content-with-line p {
+  position: relative;
+  padding-left: 20px; /* Adjust the spacing as needed */
+  margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+.content-with-line p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px; /* Length of the horizontal line */
+  height: 2px; /* Thickness of the line */
+  background-color: #ff5a3c; /* Line color */
+}
+/* section-six............................. */
+.section-six.card {
+  position: relative; /* Required for positioning the pseudo-element */
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.section-six.card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px; /* Adjust the height of the red line */
+  width: 0;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.section-six.card:hover::after {
+  width: 100%; /* The line expands to full width on hover */
+}
+
+.section-six img {
+  width: 70%; /* Reduced width */
+  height: auto;
+  margin: 0 auto; /* Center the image */
+}
+
+.section-six h1 {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.section-six p {
+  color: #999ea5;
+  font-size: 0.9rem;
+}
+.section-six a {
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: color 0.3s ease;
+  font-size: 0.9em;
+  color: #8fb6ed;
+}
+
+.section-six.card:hover a {
+  color: red;
+}
+
+/* section-seven................ */
+
+.section-property .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.section-property:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.section-property {
+  position: relative;
+}
+.section-position {
+  position: relative;
+}
+.section-location {
+  position: absolute;
+  bottom: 0;
+}
+
+.for-sale {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #77c720;
+}
+
+.section-property-heading {
+  color: #333; 
+  transition: color 0.3s ease; 
+}
+
+.section-property-heading:hover {
+  color: #ff5a3c;
+}
+.section-property-num {
+  color: #ff5a3c;
+}
+.section-property-icon {
+  color: #7b7878;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.section-property-icon:hover {
+  width: 35px;
+  height: 35px;
+  background-color: #ff5a3c;
+  color: white;
+  text-decoration: none;
+}
+
+/* sectioneight.............................. */
+
+.left-aligned {
+  text-align: left;
+  background-color: #ff5a3c;
+  color: white;
+}
+
+.left-aligned h4,
+.left-aligned p {
+  margin-left: 0;
+}
+
+.left-aligned .apartments-info-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.left-aligned .apartments-info-list ul li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.left-aligned .apartments-info-list ul li label {
+  flex: 1;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.left-aligned .apartments-info-list ul li span:nth-child(2) {
+  flex: 2;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff; /* Adjust color if needed */
+}
+
+/* Default dots separator */
+.left-aligned .apartments-info-list ul li span:nth-child(2)::before {
+  content: "......................................"; /* Dots as a separator */
+  letter-spacing: 3px;
+  margin-right: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .left-aligned .apartments-info-list ul li span:nth-child(2)::before {
+    content: "........................."; /* Fewer dots for smaller screens */
+    letter-spacing: 2px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-aligned .apartments-info-list ul li span:nth-child(2)::before {
+    content: "........................................"; /* Even fewer dots for very small screens */
+    letter-spacing: 1px;
+    margin-right: 30px;
+  }
+}
+.section-nine-background {
+  top: 0;
+  width: 100%;
+  height: 60vh; 
+  overflow: hidden;
+  z-index: -1;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.video-iconss {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font-size: 60px; 
+  color: white;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Add hover effect for the icon */
+.video-iconss:hover {
+  opacity: 1;
+  color: #ff5a3c;
+}
+
+/* section-ten....................... */
+.section-ten-main-icon {
+  background-color: #f2bab14b;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #ff5a3c;
+  border-radius: 50%;
+}
+
+.section-ten-main-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  margin: 0;
+}
+
+.section-ten-icon {
+  bottom: -30px;
+  font-size: 20px;
+  color: #ff5a3c;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.section-ten-main-icon i,
+.section-ten-icon i {
+  color: red;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.section-ten {
+  transition: background-color 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.1) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.1) 0px 1px 3px -1px;
+  border-radius: 10px;
+}
+
+.section-ten:hover {
+  background-color: #ff5a3c;
+}
+
+.section-ten:hover .section-ten-main-icon i,
+.section-ten:hover .section-ten-icon i,
+.section-ten:hover h5 {
+  color: rgb(255, 0, 0);
+}
+
+.section-ten:hover .section-ten-main-icon i {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.section-ten:hover h5 {
+  color: white;
+}
+.section-ten:hover .section-ten-icon i{
+  background-color: white;
+  padding: 18px;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+
+
+/* section1111.................. */
+.section-Feedback{
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.coma-icon img {
+  width: 20px; 
+  margin-bottom:190px;
+}
+
+
+.review-img img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; 
+  border-radius: 50%; 
+  margin-right: 10px;
+}
+
+.review-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.text-content {
+  font-size: 14px; 
+  line-height: 2.5; 
+  margin-bottom: 15px; 
+}
+
+.row {
+  display: flex;
+}
+
+.section-Feedback {
+  position: relative;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.section-Feedback:hover {
+  border-bottom: 4px solid red; 
+}
+
+
+/* section12................................ */
+
+
+.section-news-img {
+  transition: transform 0.3s ease; 
+}
+
+.section-news-main-img:hover .section-news-img {
+  transform: scale(1.1);
+}
+.news-info,
+.news-title,
+.news-link {
+    transition: color 0.3s ease;
+}
+.news-info i{
+  color: #ff5a3c;
+}
+.news-info:hover {
+    color:#ff5a3c; 
+}
+
+.news-title:hover {
+    color:#ff5a3c; 
+
+}
+
+.news-link:hover {
+    color:#ff5a3c; 
+
+}
+/* section12.............................. */
+
+
+
+/* Custom section-12 carousel controls styling */
+.section-12-carousel-control-prev, .section-12-carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.section-12-carousel-control-prev {
+  left: 10px;
+}
+
+.section-12-carousel-control-next {
+  right: 10px;
+}
+
+@media (min-width: 992px) {
+  .section-12-carousel-item .col-lg-4 {
+      display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .section-12-carousel-item .col-md-4, .section-12-carousel-item .col-lg-4 {
+      max-width: 100%;
+      flex: 0 0 100%;
+  }
+}
+/* footer......................... */
+/* Footer styling */
+.footer{
+  background-color:#171b2a;
+  color: white;
+}
+.footer-logo img {
+  width: 200px; /* Adjust logo size */
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-contact i {
+  margin-right: 10px;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff5a3c; /* Your preferred hover color */
+}
+
+footer .row {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+footer .mt-4 {
+  margin-top: 40px;
+}
+
+footer .form-control {
+  width: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .btn {
+  display: inline-block;
+}
